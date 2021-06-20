@@ -54,6 +54,10 @@ header {
             font-family: 'Fraunces', serif;
             font-size: 18px;
         }
+
+        .logo {
+            width: 11rem;
+        }
     }
 
     .title {
@@ -101,6 +105,7 @@ main {
         font-family: 'Fraunces', serif;
         font-size: 2.5rem;
         color: hsl(212, 27%, 19%);
+        margin-top: 0;
     }
 
     p {
@@ -295,6 +300,21 @@ footer {
         
         i {
             margin: 1rem;
+        }
+    }
+}
+
+
+@media(max-width: 1000px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .testimonials {
+        .cards {
+            flex-direction: column;
+            align-items: center;
         }
     }
 }

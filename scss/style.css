@@ -72,6 +72,10 @@ header nav button {
   font-size: 18px;
 }
 
+header nav .logo {
+  width: 11rem;
+}
+
 header .title {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -128,6 +132,7 @@ main h2 {
   font-family: 'Fraunces', serif;
   font-size: 2.5rem;
   color: #23303e;
+  margin-top: 0;
 }
 
 main p {
@@ -346,5 +351,26 @@ footer .social {
 
 footer .social i {
   margin: 1rem;
+}
+
+@media (max-width: 1000px) {
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonials .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
