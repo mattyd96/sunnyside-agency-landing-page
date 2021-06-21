@@ -8,21 +8,16 @@
   
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   
-  
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-
 <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
   <header>
     <nav>
-      <a href="./index.html"><img src="images/logo.svg" alt="logo" class="logo"></a>
-      <ul class="links">
+      <div class="head">
+        <a href="./index.html"><img src="images/logo.svg" alt="logo" class="logo"></a>
+        <li class="hamburger" onclick="toggleNav()"><img src="images/icon-hamburger.svg" alt="nav toggle"></li>
+      </div>
+      <ul class="links" id="links">
         <li><a href="#">About</a></li>
         <li><a href="#">Services</a></li>
         <li><a href="">Projects</a></li>
@@ -160,17 +155,19 @@
       <li><a href="">Projects</a></li>
     </ul>
     <div class="social">
-      <i><img src="images/icon-facebook.svg" alt=""></i>
-      <i><img src="images/icon-instagram.svg" alt=""></i>
-      <i><img src="images/icon-twitter.svg" alt=""></i>
-      <i><img src="images/icon-pinterest.svg" alt=""></i>
+      <a href=""><i><img src="images/icon-facebook.svg" alt=""></i></a>
+      <a href=""><i><img src="images/icon-instagram.svg" alt=""></i></a>
+      <a href=""><i><img src="images/icon-twitter.svg" alt=""></i></a>
+      <a href=""><i><img src="images/icon-pinterest.svg" alt=""></i></a>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Matthew Durflinger</a>.
     </div>
   </footer>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  
 
   <script src="script.js"></script>
 </body>
